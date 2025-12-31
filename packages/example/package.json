@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "crx-message-example",
+  "version": "1.0.0",
+  "description": "消息通信模型事例",
+  "scripts": {
+    "dev": "vite build --watch --mode development",
+    "build": "vite build --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.2",
+    "@types/chrome": "^0.0.332",
+    "@types/node": "^24.0.12",
+    "eslint": "^9.39.1",
+    "prettier": "^3.7.4",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.3",
+    "crx-message": "workspace:*"
+  }
+}
