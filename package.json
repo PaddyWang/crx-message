@@ -1,11 +1,20 @@
 {
-  "name": "crx-message-",
+  "private": true,
+  "name": "crx-message-workspace",
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "build": "pnpm --filter=!crx-message-example -r build",
+    "clean": "pnpm --filter=!crx-message-example -r clean",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.13.1"
+  "author": "PaddyWang",
+  "license": "MIT",
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "@changesets/cli": "^2.29.8"
+  }
 }

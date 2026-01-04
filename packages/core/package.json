@@ -1,6 +1,6 @@
 {
   "name": "crx-message",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
@@ -19,11 +19,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc --emitDeclarationOnly",
-    "clean": "rimraf dist",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "pnpm run clean && pnpm run build && changeset publish",
-    "prepublishOnly": "pnpm run clean && pnpm run build"
+    "clean": "rimraf dist"
   },
   "keywords": [
     "chrome",
@@ -32,7 +28,11 @@
     "browser",
     "browser-extension"
   ],
-  "author": "PaddyWang",
+  "author": {
+    "name": "PaddyWang",
+    "email": "1303841222@qq.com",
+    "url": "https://github.com/PaddyWang"
+  },
   "license": "MIT",
   "publishConfig": {
     "access": "public",
@@ -40,15 +40,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PaddyWang/crx-message.git"
+    "url": "git+https://github.com/PaddyWang/crx-message.git",
+    "directory": "packages/core"
   },
   "bugs": {
-    "url": "https://github.com/PaddyWang/crx-message/issues"
+    "url": "https://github.com/PaddyWang/crx-message/issues",
+    "email": "1303841222@qq.com"
   },
   "homepage": "https://github.com/PaddyWang/crx-message#readme",
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
-    "@changesets/cli": "^2.29.8",
     "@types/chrome": "^0.1.32",
     "@types/node": "^25.0.3",
     "rimraf": "^6.1.2",
